@@ -1,0 +1,132 @@
+/* 全局样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+/* 标题样式 */
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* 头部样式 */
+header {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    text-align: center;
+}
+
+.title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 主要内容样式 */
+main section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+main section:hover {
+    transform: translateY(-5px);
+}
+
+/* 工作经验和教育背景样式 */
+.job, .edu {
+    margin-bottom: 25px;
+}
+
+.company {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* 技能列表样式 */
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#skills li {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+#skills li:hover {
+    background-color: #2980b9;
+}
+
+/* 图标样式 */
+.fas {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    color: #7f8c8d;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
